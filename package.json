@@ -21,8 +21,7 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "jest",
-    "docs": "jsdoc -c jsdoc.json"
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
