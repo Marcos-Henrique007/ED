@@ -162,3 +162,7 @@ O repositório é atualizado continuamente conforme o avanço da disciplina e a 
 ## 📄 Licença
 
 Este projeto foi desenvolvido para fins acadêmicos e educacionais. Sinta-se à vontade para utilizá-lo como material de estudo, respeitando os créditos do autor.
+
+Este projeto está licenciado sob a Licença MIT.
+
+Consulte o arquivo [LICENSE](LICENSE) para mais informações.
