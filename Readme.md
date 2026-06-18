@@ -1,122 +1,164 @@
 # 📚 Estrutura de Dados (ED) - UFRN
 
 ![Status](https://img.shields.io/badge/status-em%20desenvolvimento-yellow)
-![Repo
-Size](https://img.shields.io/github/repo-size/Marcos-Henrique710/ED)
-![Last
-Commit](https://img.shields.io/github/last-commit/Marcos-Henrique710/ED)
+![Repo Size](https://img.shields.io/github/repo-size/Marcos-Henrique007/ED)
+![Last Commit](https://img.shields.io/github/last-commit/Marcos-Henrique007/ED)
 
-Repositório criado para organizar e armazenar todas as atividades,
-listas resolvidas e implementações desenvolvidas na disciplina de
-**Estrutura de Dados (ED)**.
+Repositório desenvolvido para armazenar atividades, listas de exercícios e implementações realizadas durante a disciplina de **Estrutura de Dados (ED)** da Universidade Federal do Rio Grande do Norte (UFRN).
 
-Este repositório funciona como um portfólio acadêmico, documentando o
-aprendizado e servindo como base de estudo para revisões e provas.
+O objetivo deste projeto é consolidar o aprendizado dos principais conceitos de estruturas de dados, registrar a evolução acadêmica ao longo da disciplina e servir como material de consulta para estudos futuros.
 
-------------------------------------------------------------------------
+---
+
+## 🎯 Objetivos
+
+- Praticar conceitos fundamentais de Estrutura de Dados;
+- Implementar estruturas e algoritmos estudados em sala de aula;
+- Desenvolver habilidades de resolução de problemas;
+- Manter um histórico da evolução durante a disciplina;
+- Construir um portfólio acadêmico para consulta e revisão.
+
+---
 
 ## 📂 Estrutura do Repositório
 
-📝 **Listas/**\
-Contém listas de exercícios resolvidas ao longo da disciplina.\
-Objetivo: prática e fixação dos conteúdos.
+```text
+ED/
+├── src/
+│   ├── Hello.js
+│   ├── fila.js
+│   ├── pilha.js
+│   └── ...
+├── listas/
+├── documentos/
+└── README.md
+```
 
-💻 **Códigos/**\
-Implementações de estruturas de dados.\
-Exemplos: pilhas, filas, listas, algoritmos.
+### 📌 Diretórios
 
-📦 **Outros/**\
-Arquivos auxiliares e testes diversos.
+#### 📝 Listas
+Contém listas de exercícios resolvidas ao longo da disciplina.
 
-------------------------------------------------------------------------
+#### 💻 Código-Fonte
+Implementações práticas de estruturas de dados e algoritmos.
 
-## 🚀 Objetivo
+Exemplos:
 
-O propósito deste repositório é:
+- Pilhas
+- Filas
+- Listas
+- Algoritmos de ordenação
+- Algoritmos de busca
 
--   Praticar estruturas de dados
--   Registrar evolução no aprendizado
--   Servir como material de estudo
--   Criar portfólio acadêmico
+#### 📦 Arquivos Auxiliares
+Documentos, testes e materiais complementares.
 
-------------------------------------------------------------------------
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
-🔹 JavaScript (Node.js)\
-🔹 Git/GitHub\
-🔹 VSCode
+- JavaScript (Node.js)
+- Docker
+- Git
+- GitHub
+- Visual Studio Code
 
-------------------------------------------------------------------------
+---
 
-## 📌 Como Usar
+## 🚀 Executando o Projeto
 
-Clone o repositório:
+Os exercícios podem ser executados utilizando Docker.
 
-    git clone https://github.com/Marcos-Henrique710/ED.git
+### Executar um único arquivo
 
-Acesse a pasta:
+```bash
+docker run estrutura-dados-js node src/Hello.js
+```
 
-    cd ED
-
-------------------------------------------------------------------------
-
-## ▶️ Como Rodar os Códigos
-
-### ⚡ JavaScript (Node.js)
-
-    node nome-do-arquivo.js
+Substitua `Hello.js` pelo arquivo que deseja executar.
 
 Exemplo:
 
-    node Q5_L1.js
+```bash
+docker run estrutura-dados-js node src/fila.js
+```
 
-------------------------------------------------------------------------
+---
 
-## 🧩 Exemplos de Execução
+### Executar vários testes no mesmo container
 
-⚡ **Exemplo (RPN)**
+Para acessar o terminal do container:
 
-Entrada:
+```bash
+docker run -it estrutura-dados-js sh
+```
 
-    (a+(b*c))
+Após entrar no container, execute quantos arquivos desejar:
 
-Saída:
+```bash
+node src/fila.js
+node src/pilha.js
+node src/Hello.js
+```
 
-    abc*+
+---
 
-⚡ **Exemplo (Pilha de Pratos)**
+## 📖 Exemplos de Execução
 
-Saída:
+### Conversão para Notação Pós-Fixa (RPN)
 
-    20
-    15
-    10
-    5
-    null
+**Entrada**
 
-------------------------------------------------------------------------
+```text
+(a+(b*c))
+```
 
-## 📚 Exemplos de Uso
+**Saída**
 
--   Revisar listas antes de provas\
--   Testar estruturas de dados\
--   Entender funcionamento de pilhas\
--   Praticar lógica de programação
+```text
+abc*+
+```
 
-------------------------------------------------------------------------
+### Pilha de Pratos
+
+**Saída**
+
+```text
+20
+15
+10
+5
+null
+```
+
+---
+
+## 📚 Aplicações dos Exercícios
+
+- Revisão para avaliações;
+- Consulta de implementações de estruturas de dados;
+- Estudo de algoritmos clássicos;
+- Prática de lógica de programação;
+- Aprendizado de JavaScript utilizando Node.js.
+
+---
 
 ## 📅 Atualizações
 
-📌 O repositório será atualizado conforme avanço da disciplina.
+O repositório é atualizado continuamente conforme o avanço da disciplina e a resolução de novas atividades.
 
-------------------------------------------------------------------------
+---
 
-## 👤 Autor
+## 👨‍💻 Autor
 
-**Marcos Henrique**
+**Marcos Henrique Barbosa Pessoa**
 
-📧 Email: marcoshenriqueufrn@gmail.com\
-🔗 GitHub: https://github.com/Marcos-Henrique710
+📧 E-mail: marcoshenriqueufrn@gmail.com
 
-------------------------------------------------------------------------
+🐙 GitHub: https://github.com/Marcos-Henrique710
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e educacionais. Sinta-se à vontade para utilizá-lo como material de estudo, respeitando os créditos do autor.
