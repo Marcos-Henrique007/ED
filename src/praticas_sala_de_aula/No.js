@@ -4,3 +4,5 @@ class No {
         this.proximo = null;
     }
 }
+
+export default ListaLigada;

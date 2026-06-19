@@ -9,12 +9,12 @@ class filaDuplamenteLigada {
 
     //Verificar se a lista está vazia
     isEmpty() {
-        this.head === null;
+        return this.head === null;
     }
 
     //Adicionar um elemento no início da lista
     add(dados) {
-        let novoNo = new noDuplo();
+        let novoNo = new noDuplo(dados);
         if(this.isEmpty()){
             this.head = novoNo;
             this.tail = novoNo;
@@ -27,7 +27,7 @@ class filaDuplamenteLigada {
 
     //Adicionar um elemento no final da lista
     append(dados) {
-        let novoNo = new noDuplo(dado);
+        let novoNo = new noDuplo(dados);
 
         if(this.isEmpty()) {
             this.head = novoNo;

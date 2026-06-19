@@ -1,5 +1,5 @@
 class NoPrioridade {
-    constructor() {
+    constructor(dado, prioridade) {
         this.prioridade = null;
         this.dado = null;
     }

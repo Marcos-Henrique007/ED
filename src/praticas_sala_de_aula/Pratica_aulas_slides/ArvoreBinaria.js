@@ -74,3 +74,5 @@ arvore = arvore.Delete(10);
 
 console.log("deletando: ");
 arvore.Printar();
+
+export default ArvoreBinaria;

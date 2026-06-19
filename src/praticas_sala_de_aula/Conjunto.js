@@ -88,3 +88,5 @@ console.log('União:', conjuntoA.uniao(conjuntoB).toString());
 console.log('Diferença A - B:', conjuntoA.diferenca(conjuntoB).toString());
 console.log('A é subconjunto de B?', conjuntoA.subconjunto(conjuntoB));
 console.log('B é subconjunto de A?', conjuntoB.subconjunto(conjuntoA));
+
+export default Conjunto;

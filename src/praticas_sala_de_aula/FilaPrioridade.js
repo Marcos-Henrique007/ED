@@ -1,20 +1,39 @@
+import NoPrioridade from "./NoPrioridade.js";
+
 class FilaPrioridade {
     constructor() {
-        this.size = 0;
         this.dados = [];
-        this.dados[0] = new NoPrioridade(undefined, 99999999999);
     }
 
-    add(dado) {
-        let novoNo = new NoPrioridade(dados, prioridade);
-        this.size = this.size + 1;
-        this.dados(this.size) = novoNo;
+    add(dado, prioridade) {
+        const novo = new NoPrioridade(dado, prioridade);
 
-        let pai = this.size / 2;
-         
+        let inserido = false;
+
+        for (let i = 0; i < this.dados.length; i++) {
+            if (prioridade < this.dados[i].prioridade) {
+                this.dados.splice(i, 0, novo);
+                inserido = true;
+                break;
+            }
+        }
+
+        if (!inserido) {
+            this.dados.push(novo);
+        }
     }
 
     remove() {
+        if (this.dados.length === 0) {
+            throw new Error("Fila vazia");
+        }
 
+        return this.dados.shift();
+    }
+
+    isEmpty() {
+        return this.dados.length === 0;
     }
 }
+
+export default FilaPrioridade;
